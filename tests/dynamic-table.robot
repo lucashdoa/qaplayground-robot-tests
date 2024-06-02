@@ -14,8 +14,7 @@ Dynamic table
 
 *** Keywords ***
 open the browser with dynamic table url
-    Create Webdriver    Chrome
-    Go To    https://qaplayground.dev/apps/dynamic-table/
+    Open Browser   https://qaplayground.dev/apps/dynamic-table/    headlesschrome 
 
 get Spider-Man real name
     ${realName}=    Get Text    xpath://table//td//div[text()="Spider-Man"]/ancestor::tr/td[3]/span
